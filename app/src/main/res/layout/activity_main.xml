@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:textSize="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="iiweess store"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/sweety_green"
+            />
+
+    <TextView
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Товары"
+            />
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            >
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="70dp"
+                >
+
+            <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Телефон"
+                    android:id="@+id/check_0">
+
+            </CheckBox>
+
+            <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ноутбук"
+                    android:id="@+id/check_1">
+
+            </CheckBox>
+
+            <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Сервер"
+                    android:id="@+id/check_2">
+
+            </CheckBox>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="right"
+                >
+
+            <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Дата-центр"
+                    android:id="@+id/check_3">
+
+            </CheckBox>
+
+            <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Атомный компьютер"
+                    android:id="@+id/check_4">
+
+            </CheckBox>
+
+            <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Космиоческая станция"
+                    android:id="@+id/check_5">
+
+            </CheckBox>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Доставка"
+            />
+
+
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            <RadioGroup
+                    android:id="@+id/RG1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    >
+            <RadioButton
+                    android:id="@+id/RB1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Человеком">
+            </RadioButton>
+
+            <RadioButton
+                    android:id="@+id/RB2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ровером">
+            </RadioButton>
+
+            <RadioButton
+                    android:id="@+id/RB3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Робособакой">
+            </RadioButton>
+            </RadioGroup>
+        </LinearLayout>
+
+
+    <EditText
+            android:id="@+id/ET"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:hint="Введите комментарий">
+
+    </EditText>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/sweety_green"
+                    android:text="Заказать"
+                    android:id="@+id/confirm">
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="end">
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/lighty_red"
+                    android:layout_gravity="right"
+                    android:text="Очистить"
+                    android:id="@+id/clear">
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
